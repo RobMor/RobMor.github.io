@@ -1,0 +1,51 @@
+body {
+    font-family: Lucida Console;
+    margin: 0px;
+}
+
+nav {
+    width: 100%;
+    display: table;
+
+    background-color: white;
+
+    /* Keep navbar at top */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    display: block;
+    float: left;
+    border: 2px solid;
+
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-decoration: none;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+#name {
+    /*font-family: 'Sarina', cursive;*/
+    border: 2px solid;
+
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+#content {
+    margin: 5px;
+}
