@@ -1,12 +1,14 @@
 body {
-    font-family: Lucida Console;
     margin: 0px;
+    font-family: sans-serif;
+    background-color: gray;
 }
 
 nav {
     width: 100%;
     display: table;
 
+    font-weight: bold;
     background-color: white;
 
     /* Keep navbar at top */
@@ -37,6 +39,17 @@ nav a:hover {
     border-color: black;
 }
 
+.active {
+    background-color: gray;
+    border-color: gray;
+}
+
+.active:hover {
+    color: black;
+    background-color: gray;
+    border-color: gray;
+}
+
 #name {
     border: 2px solid;
 
@@ -46,5 +59,19 @@ nav a:hover {
 }
 
 #content {
-    margin: 5px;
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+
+    border: 2px solid black;
+
+    text-align: justify;
+
+    background-color: white;
+}
+
+#title {
+    margin-top: 5px;
+    font-size: 24px;
+    text-align: center;
 }
