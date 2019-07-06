@@ -3,13 +3,17 @@
     --main-fg-color: white;
     --main-text-color: black;
     --main-text-color-inverted: white;
-    
+
     font-family: "Zilla Slab", serif;
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     background-color: var(--main-bg-color);
+}
+
+img {
+    width: 100%;
 }
 
 nav {
@@ -35,10 +39,10 @@ nav a {
     border-color: var(--main-fg-color);
     text-decoration: none;
 
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 nav a:hover {
@@ -59,19 +63,20 @@ nav a:hover {
 }
 
 #title {
-    margin-top: 5px;
-    margin-bottom: 8px;
-    font-size: 64px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: 800;
 }
 
 #links {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 #links span + span {
-    margin-left: 5px;
+    margin-left: 1rem;
 }
 
 #links a {
@@ -84,16 +89,14 @@ nav a:hover {
 }
 
 #content {
-    margin: 5px;
-    padding: 5px;
+    margin: 1rem;
+    padding: 1rem;
 
     text-align: justify;
-
-    background-color: white;
 }
 
 /* Dynamic resizing of the content */
-@media (min-width: 30em) {
+@media (min-width: 30rem) {
     #content {
         margin-left: auto;
         margin-right: auto;
@@ -101,10 +104,31 @@ nav a:hover {
     }
 }
 
-@media (min-width: 65em) {
+@media (min-width: 65rem) {
     #content {
         margin-left: auto;
         margin-right: auto;
         width: 50%
     }
+}
+
+.preview {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
+
+.preview .sidebar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex-basis: 25%;
+    flex-grow: 1;
+    min-width: 10rem;
+}
+
+.preview p {
+    margin: 1rem;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 60%;
 }
