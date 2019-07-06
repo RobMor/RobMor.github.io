@@ -1,15 +1,23 @@
+:root {
+    --main-bg-color: white;
+    --main-fg-color: white;
+    --main-text-color: black;
+    --main-text-color-inverted: white;
+    
+    font-family: "Zilla Slab", serif;
+}
+
 body {
     margin: 0px;
-    font-family: sans-serif;
-    background-color: gray;
+    background-color: var(--main-bg-color);
 }
 
 nav {
     width: 100%;
     display: table;
 
-    font-weight: bold;
-    background-color: white;
+    font-weight: 500;
+    background-color: var(--main-fg-color);
 
     /* Keep navbar at top */
     position: -webkit-sticky; /* Safari */
@@ -22,9 +30,9 @@ nav a {
     float: left;
     border: 2px solid;
 
-    color: black;
-    background-color: white;
-    border-color: white;
+    color: var(--main-text-color);
+    background-color: var(--main-fg-color);
+    border-color: var(--main-fg-color);
     text-decoration: none;
 
     padding-top: 2px;
@@ -34,35 +42,50 @@ nav a {
 }
 
 nav a:hover {
-    color: white;
+    color: var(--main-text-color-inverted);
     background-color: black;
     border-color: black;
 }
 
 .active {
-    background-color: gray;
-    border-color: gray;
+    background-color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
 }
 
 .active:hover {
     color: black;
-    background-color: gray;
-    border-color: gray;
+    background-color: var(--main-bg-color);
+    border-color: var(--main-bg-color);
 }
 
-#name {
-    border: 2px solid;
+#title {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 800;
+}
 
-    color: white;
-    background-color: black;
-    border-color: black;
+#links {
+    text-align: center;
+}
+
+#links span + span {
+    margin-left: 5px;
+}
+
+#links a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
 }
 
 #content {
     margin: 5px;
     padding: 5px;
-
-    border: 1px solid black;
 
     text-align: justify;
 
@@ -78,17 +101,10 @@ nav a:hover {
     }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 65em) {
     #content {
         margin-left: auto;
         margin-right: auto;
         width: 50%
     }
-}
-
-#title {
-    margin-top: 5px;
-    margin-bottom: 8px;
-    font-size: 24px;
-    text-align: center;
 }
