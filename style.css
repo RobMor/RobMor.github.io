@@ -56,8 +56,8 @@ nav a:hover {
 
 .anchor {
     --offset: 3rem;
-    padding-top: var(--offset);
-    margin-top: calc(-1 * var(--offset));
+    position: absolute;
+    top: 0;
 }
 
 #content {
