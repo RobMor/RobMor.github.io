@@ -1,85 +1,113 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="style.css"/> <!-- Custom Styles-->
-        <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto&display=swap" rel="stylesheet">  <!-- Fonts -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Cute Icons -->
+    <script src="script.js"></script>
 
-        <title>Robert Morrison</title>
-    </head>
-    <body>
-        <!-- Navigation Bar -->
-        <nav>
-            <a href="#content">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-        </nav>
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!-- Custom Styles-->
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto&display=swap" rel="stylesheet"> <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Cute Icons -->
 
-        <!-- Rest of the Content -->
-        <main id="content">
-            <header>
-                <h1 id="title">Robert Morrison</h1>
-                
-                <div id="links">
-                    <span>robbieguy98 at gmail dot com</span>
-                    <span>
-                        <span><a href="https://github.com/RobMor/"><i class="fa fa-github fa-fw"></i>GitHub</a></span>
-                        <span><a href="https://www.linkedin.com/in/robmorr/"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a></span>
-                    </span>
-                </div>
-            </header>
+    <title>Robert Morrison</title>
+</head>
 
-            <hr>
-            
-            <section class="preview">
-                <div class="sidebar">
-                    <img id="headshot" src="me.png">
-                </div>
-                <p>
-                    I am a computer science student at the University of Maryland, College Park.
-                    My interests range from machine learning to programming languages.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, ipsum nec efficitur imperdiet, nisl ante mattis dolor, quis sagittis ipsum diam vel diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eu sodales justo, eu fringilla ipsum. Aenean ut sodales ipsum, id pulvinar ante. Integer tempus urna purus, nec viverra turpis commodo faucibus. Integer tortor nulla, lacinia at mauris eu, consectetur bibendum quam. Etiam tempus viverra gravida. Sed id odio sit amet metus cursus viverra. Nullam eget venenatis lectus. Quisque rhoncus libero purus, in pellentesque metus aliquam vitae. Aliquam est nunc, sagittis a leo quis, tristique finibus est. Phasellus laoreet dignissim dolor. Nam diam magna, molestie ac neque a, molestie blandit nisl. Nunc aliquet nisl in nunc semper, sit amet suscipit felis gravida.
-                </p>
-            </section>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+    </nav>
 
-            <hr>
+    <!-- Rest of the Content -->
+    <main id="content">
+        <a id="home" class="anchor"/>
+        <header>
+            <h1 id="title">Robert Morrison</h1>
 
-            <section class="preview">
-                <p>
-                    I've done a lot of projects.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, ipsum nec efficitur imperdiet, nisl ante mattis dolor, quis sagittis ipsum diam vel diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eu sodales justo, eu fringilla ipsum. Aenean ut sodales ipsum, id pulvinar ante. Integer tempus urna purus, nec viverra turpis commodo faucibus. Integer tortor nulla, lacinia at mauris eu, consectetur bibendum quam. Etiam tempus viverra gravida. Sed id odio sit amet metus cursus viverra. Nullam eget venenatis lectus. Quisque rhoncus libero purus, in pellentesque metus aliquam vitae. Aliquam est nunc, sagittis a leo quis, tristique finibus est. Phasellus laoreet dignissim dolor. Nam diam magna, molestie ac neque a, molestie blandit nisl. Nunc aliquet nisl in nunc semper, sit amet suscipit felis gravida.
-                    Nunc pellentesque, lacus eu egestas interdum, erat leo porttitor lorem, non mattis ex diam quis dui. Aenean id fringilla felis. Suspendisse rhoncus, arcu sit amet auctor lacinia, turpis sem tincidunt dui, quis faucibus sapien nibh vitae ligula. Nullam in accumsan ipsum, sit amet viverra purus. Duis lorem lacus, tristique ut odio quis, convallis scelerisque tellus. Duis nec vehicula ex, a vulputate purus. Donec sagittis blandit neque vitae porttitor. Praesent viverra hendrerit ultricies. 
-                </p>
-                <div class="sidebar">
-                    <img src="code.png">
-                </div>
-            </section>
+            <div id="links">
+                <span>robbieguy98 at gmail dot com</span>
+                <span>
+                    <span><a href="https://github.com/RobMor/"><i class="fa fa-github fa-fw"></i>GitHub</a></span>
+                    <span><a href="https://www.linkedin.com/in/robmorr/"><i
+                                class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a></span>
+                </span>
+            </div>
+        </header>
 
-            <hr>
+        <hr>
 
-            <section id="about">
-                <h2 class="section-title">About Me</h2>
-                <dl>
-                    <dt>School</dt>
-                    <dd>University of Maryland, College Park</dd>
-                    <dt>Work Experience</dt>
-                    <dd>Lockheed Martin: Summer Internship</dd>
-                    <dd>University of Maryland: Undergraduate Researcher</dd>
-                    <dd>National Institute of Standards in Technology: Scientific Programmer</dd>
-                    <dd>FedCentric Technologies: Data Science Intern</dd>
-                </dl>
-            </section>
+        <section class="preview">
+            <div class="sidebar">
+                <img id="headshot" src="me.png">
+            </div>
+            <p>
+                I am a computer science student at the University of Maryland, College Park.
+                My interests range from machine learning to programming languages.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, ipsum nec efficitur imperdiet,
+                nisl ante mattis dolor, quis sagittis ipsum diam vel diam. Pellentesque habitant morbi tristique
+                senectus et netus et malesuada fames ac turpis egestas. Integer eu sodales justo, eu fringilla ipsum.
+                Aenean ut sodales ipsum, id pulvinar ante. Integer tempus urna purus, nec viverra turpis commodo
+                faucibus. Integer tortor nulla, lacinia at mauris eu, consectetur bibendum quam. Etiam tempus viverra
+                gravida. Sed id odio sit amet metus cursus viverra. Nullam eget venenatis lectus. Quisque rhoncus libero
+                purus, in pellentesque metus aliquam vitae. Aliquam est nunc, sagittis a leo quis, tristique finibus
+                est. Phasellus laoreet dignissim dolor. Nam diam magna, molestie ac neque a, molestie blandit nisl. Nunc
+                aliquet nisl in nunc semper, sit amet suscipit felis gravida.
+            </p>
+        </section>
 
-            <hr>
+        <hr>
 
-            <section id="projects">
-                <h2 class="section-title">Projects</h2>
-            </section>
-        </main>
-    </body>
+        <section class="preview">
+            <p>
+                I've done a lot of projects.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, ipsum nec efficitur imperdiet,
+                nisl ante mattis dolor, quis sagittis ipsum diam vel diam. Pellentesque habitant morbi tristique
+                senectus et netus et malesuada fames ac turpis egestas. Integer eu sodales justo, eu fringilla ipsum.
+                Aenean ut sodales ipsum, id pulvinar ante. Integer tempus urna purus, nec viverra turpis commodo
+                faucibus. Integer tortor nulla, lacinia at mauris eu, consectetur bibendum quam. Etiam tempus viverra
+                gravida. Sed id odio sit amet metus cursus viverra. Nullam eget venenatis lectus. Quisque rhoncus libero
+                purus, in pellentesque metus aliquam vitae. Aliquam est nunc, sagittis a leo quis, tristique finibus
+                est. Phasellus laoreet dignissim dolor. Nam diam magna, molestie ac neque a, molestie blandit nisl. Nunc
+                aliquet nisl in nunc semper, sit amet suscipit felis gravida.
+                Nunc pellentesque, lacus eu egestas interdum, erat leo porttitor lorem, non mattis ex diam quis dui.
+                Aenean id fringilla felis. Suspendisse rhoncus, arcu sit amet auctor lacinia, turpis sem tincidunt dui,
+                quis faucibus sapien nibh vitae ligula. Nullam in accumsan ipsum, sit amet viverra purus. Duis lorem
+                lacus, tristique ut odio quis, convallis scelerisque tellus. Duis nec vehicula ex, a vulputate purus.
+                Donec sagittis blandit neque vitae porttitor. Praesent viverra hendrerit ultricies.
+            </p>
+            <div class="sidebar">
+                <img src="code.png">
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <a id="about" class="section-anchor"/>
+            <h2 class="section-title">About Me</h2>
+            <dl>
+                <dt>School</dt>
+                <dd>University of Maryland, College Park</dd>
+                <dt>Work Experience</dt>
+                <dd>Lockheed Martin: Summer Internship</dd>
+                <dd>University of Maryland: Undergraduate Researcher</dd>
+                <dd>National Institute of Standards in Technology: Scientific Programmer</dd>
+                <dd>FedCentric Technologies: Data Science Intern</dd>
+            </dl>
+        </section>
+
+        <hr>
+
+        <section>
+            <a id="projects" class="section-anchor"/>
+            <h2 class="section-title">Projects</h2>
+        </section>
+    </main>
+</body>
+
 </html>

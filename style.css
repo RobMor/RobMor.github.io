@@ -23,8 +23,7 @@ img {
 
 nav {
     width: 100%;
-    height: var(--nav-height);
-    z-index: 2;
+    z-index: 999;
     display: table;
 
     line-height: 2rem;
@@ -55,15 +54,16 @@ nav a:hover {
     border-color: black;
 }
 
+.anchor {
+    --offset: 3rem;
+    padding-top: var(--offset);
+    margin-top: calc(-1 * var(--offset));
+}
+
 #content {
-    /* Put content at top of page despite nav */
-    position: relative;
-    top: calc(-1 * var(--nav-height));
-    padding: 1rem;
-    padding-top: var(--nav-height);
-    
     max-width: 60rem;
     margin: 0px auto;
+    padding: 1rem;
 }
 
 #title {
@@ -117,6 +117,12 @@ nav a:hover {
     flex-basis: 0;
     flex-grow: 999;
     min-width: 60%;
+}
+
+.section-anchor {
+    --offset: 2.5rem;
+    padding-top: var(--offset);
+    margin-top: calc(-1 * var(--offset));
 }
 
 .section-title {
