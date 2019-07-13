@@ -4,12 +4,17 @@
     --main-text-color: black;
     --main-text-color-inverted: white;
 
-    font-family: "Zilla Slab", serif;
+    --nav-height: 3rem;
+    
+    --title-font: 'Patua One', serif;
+    --main-font: 'Roboto', sans-serif;
 }
 
 body {
     margin: 0;
     background-color: var(--main-bg-color);
+    font-family: var(--main-font);
+    line-height: 1.5rem;
 }
 
 img {
@@ -18,9 +23,11 @@ img {
 
 nav {
     width: 100%;
+    height: var(--nav-height);
+    z-index: 2;
     display: table;
 
-    font-weight: 500;
+    line-height: 2rem;
     background-color: var(--main-fg-color);
 
     /* Keep navbar at top */
@@ -39,10 +46,7 @@ nav a {
     border-color: var(--main-fg-color);
     text-decoration: none;
 
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
 }
 
 nav a:hover {
@@ -51,28 +55,34 @@ nav a:hover {
     border-color: black;
 }
 
-.active {
-    background-color: var(--main-bg-color);
-    border-color: var(--main-bg-color);
-}
-
-.active:hover {
-    color: black;
-    background-color: var(--main-bg-color);
-    border-color: var(--main-bg-color);
+#content {
+    /* Put content at top of page despite nav */
+    position: relative;
+    top: calc(-1 * var(--nav-height));
+    padding: 1rem;
+    padding-top: var(--nav-height);
+    
+    max-width: 60rem;
+    margin: 0px auto;
 }
 
 #title {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 4rem;
+    margin: 0;
+    font-size: calc(3rem + 0.75 * ((100vw - 35rem) / 30));
+    line-height: calc(3rem + ((100vw - 35rem) / 30));
     text-align: center;
+    font-family: var(--title-font);
     font-weight: 800;
 }
 
 #links {
     text-align: center;
-    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+#links span {
+    display: inline-block;
+    white-space: nowrap;
 }
 
 #links span + span {
@@ -86,30 +96,6 @@ nav a:hover {
 
 #links a:hover {
     text-decoration: underline;
-}
-
-#content {
-    margin: 1rem;
-    padding: 1rem;
-
-    text-align: justify;
-}
-
-/* Dynamic resizing of the content */
-@media (min-width: 30rem) {
-    #content {
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%
-    }
-}
-
-@media (min-width: 65rem) {
-    #content {
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%
-    }
 }
 
 .preview {
@@ -131,4 +117,9 @@ nav a:hover {
     flex-basis: 0;
     flex-grow: 999;
     min-width: 60%;
+}
+
+.section-title {
+    font-family: var(--title-font);
+    font-size: 2rem;
 }
