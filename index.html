@@ -30,7 +30,7 @@
             <h1 id="title">Robert Morrison</h1>
 
             <div id="links">
-                <span>robbieguy98 at gmail dot com</span>
+                <span><i class="fa fa-envelope fa-fw"></i>robbieguy98@gmail.com</span>
                 <span>
                     <span><a href="https://github.com/RobMor/"><i class="fa fa-github fa-fw"></i>GitHub</a></span>
                     <span><a href="https://www.linkedin.com/in/robmorr/"><i
@@ -42,70 +42,165 @@
         <hr>
 
         <section class="preview">
-            <picture class="sidebar">
+            <picture class="side-image">
                 <img id="headshot" src="me.png">
             </picture>
             <p>
-                I am a computer science student at the University of Maryland, College Park.
-                My interests range from machine learning to programming languages.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, ipsum nec efficitur imperdiet,
-                nisl ante mattis dolor, quis sagittis ipsum diam vel diam. Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. Integer eu sodales justo, eu fringilla ipsum.
-                Aenean ut sodales ipsum, id pulvinar ante. Integer tempus urna purus, nec viverra turpis commodo
-                faucibus. Integer tortor nulla, lacinia at mauris eu, consectetur bibendum quam. Etiam tempus viverra
-                gravida. Sed id odio sit amet metus cursus viverra. Nullam eget venenatis lectus. Quisque rhoncus libero
-                purus, in pellentesque metus aliquam vitae. Aliquam est nunc, sagittis a leo quis, tristique finibus
-                est. Phasellus laoreet dignissim dolor. Nam diam magna, molestie ac neque a, molestie blandit nisl. Nunc
-                aliquet nisl in nunc semper, sit amet suscipit felis gravida.
+                I am a senior computer science and statistics student at the University of Maryland, College Park.
+                I enjoy learning about the systems around us and occasionally I enjoy experimenting with them
+                myself. Most of my experience in the real world comes in the form of witnessing the flaws in our
+                systems and being told to patch them. Through my work I have developed a reverence for the well
+                designed systems around us. Outside of work I enjoy cooking, biking, and urban exploration.
             </p>
         </section>
 
-        <hr>
+        <!-- <hr>
 
         <section class="preview">
             <p>
-                I've done a lot of projects.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, ipsum nec efficitur imperdiet,
-                nisl ante mattis dolor, quis sagittis ipsum diam vel diam. Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. Integer eu sodales justo, eu fringilla ipsum.
-                Aenean ut sodales ipsum, id pulvinar ante. Integer tempus urna purus, nec viverra turpis commodo
-                faucibus. Integer tortor nulla, lacinia at mauris eu, consectetur bibendum quam. Etiam tempus viverra
-                gravida. Sed id odio sit amet metus cursus viverra. Nullam eget venenatis lectus. Quisque rhoncus libero
-                purus, in pellentesque metus aliquam vitae. Aliquam est nunc, sagittis a leo quis, tristique finibus
-                est. Phasellus laoreet dignissim dolor. Nam diam magna, molestie ac neque a, molestie blandit nisl. Nunc
-                aliquet nisl in nunc semper, sit amet suscipit felis gravida.
-                Nunc pellentesque, lacus eu egestas interdum, erat leo porttitor lorem, non mattis ex diam quis dui.
-                Aenean id fringilla felis. Suspendisse rhoncus, arcu sit amet auctor lacinia, turpis sem tincidunt dui,
-                quis faucibus sapien nibh vitae ligula. Nullam in accumsan ipsum, sit amet viverra purus. Duis lorem
-                lacus, tristique ut odio quis, convallis scelerisque tellus. Duis nec vehicula ex, a vulputate purus.
-                Donec sagittis blandit neque vitae porttitor. Praesent viverra hendrerit ultricies.
+                Throughout school, work and during my free time I have gained experience through different projects.
+                In school I faithfully do my school work, and of course learn a lot. However like most people I learnt
+                the most when I went off and did more practical things. I'm very greatful to have had the opportunity to
+                participate in research alongside professors at my school. I learned most of what I know about software, data
+                science and machine learning through the work I got to do there which I wouldn't have been able to get
+                anywhere else. Also the various internships I have had taught me more about what I want to do...
             </p>
-            <picture class="sidebar">
+            <picture class="side-image">
                 <img src="code.png">
             </picture>
-        </section>
+        </section> -->
 
         <hr>
 
-        <section>
-            <a id="about" class="section-anchor"></a>
-            <h2 class="section-title">About Me</h2>
-            <dl>
-                <dt>School</dt>
-                <dd>University of Maryland, College Park</dd>
-                <dt>Work Experience</dt>
-                <dd>Lockheed Martin: Summer Internship</dd>
-                <dd>University of Maryland: Undergraduate Researcher</dd>
-                <dd>National Institute of Standards in Technology: Scientific Programmer</dd>
-                <dd>FedCentric Technologies: Data Science Intern</dd>
-            </dl>
-        </section>
-
-        <hr>
-
-        <section>
+        <section class="full">
             <a id="projects" class="section-anchor"></a>
             <h2 class="section-title">Projects</h2>
+            <div class="item">
+                <a class="side-image" href="https://github.com/RobMor/NetZero">
+                    <img src="code.png">
+                </a>
+                <div class="item-desc">
+                    <h3 class="item-title"><a href="https://github.com/RobMor/NetZero">NetZero</a></h3>
+                    <p>
+                        NetZero is a data collection tool I created for my neighbor to analyze the efficiency of his house.
+                        It provides a simple command line interface, automatic data storage and visualization, and easy
+                        extensibility to add new data sources.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <a class="side-image" href="https://github.com/RobMor/Kakuro">
+                    <img src="kakuro.svg">
+                </a>
+                <div class="item-desc">
+                    <h3 class="item-title"><a href="https://github.com/RobMor/Kakuro">Kakuro Solver</a></h3>
+                    <p>
+                        A <a href="https://en.wikipedia.org/wiki/Kakuro">Kakuro</a> solver built as a final project for CMSC388F:
+                        Functional Pearls. I wrote it in Haskell and got the solve time down to less than a second on large boards
+                        using techniques from the class.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <a class="side-image" href="https://github.com/RobMor/CMSC320-Final-Project/">
+                    <img src="320.png">
+                </a>
+                <div class="item-desc">
+                    <h3 class="item-title"><a href="https://github.com/RobMor/CMSC320-Final-Project/">UN General Assembly Analysis</a></h3>
+                    <p>
+                        A Jupyter Notebook containing analysis done on the UN General Assembly's debate transcripts. We attempted to classify
+                        the home country of the speakers using simple analysis of the words they used which proved surprisingly effective.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <a class="side-image" href="https://www.rsaconference.com/writable/files/About/morrison-robert-17-_approved.pdf">
+                    <img src="poster.png">
+                </a>
+                <div class="item-desc">
+                    <h3 class="item-title"><a href="https://www.rsaconference.com/writable/files/About/morrison-robert-17-_approved.pdf">Vulnerability Detection Poster</a></h3>
+                    <p>
+                        A poster I crafted as a result of the research I had done with a professor at my school. The work was 
+                        mainly an applied machine learning effort focussing on the detection of vulnerabilities in large code bases
+                        using static analysis techniques mixed with modern machine learning. I presented this work at RSA Conference
+                        and my school's Undergraduate Research Day.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <a class="side-image" href="https://github.com/RobMor/CMSC320-Final-Project/">
+                    <img src="trig.png">
+                </a>
+                <div class="item-desc">
+                    <h3 class="item-title"><a href="https://devpost.com/software/trigger-happy">Trigger Happy</a></h3>
+                    <p>
+                        A hackathon project in which we strapped a webcam and an arduino to a nerf gun and used computer vision software
+                        to lock the gun when it would make a lethal shot.
+                    </p>
+                </div>
+            </div>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="full">
+            <a id="about" class="section-anchor"></a>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-content">
+                <h3 class="subsection-title">Education</h3>
+                <ul>
+                    <li>Double Major in Computer Science and Statistics &mdash; University of Maryland, College Park
+                    </li>
+                    <li>GPA: 3.6</li>
+                </ul>
+                <h3 class="subsection-title">Work Experience</h3>
+                <ul>
+                    <li><b>Software Engineering Intern</b> &mdash; Lockheed Martin (<i>Jun 2019 - Aug 2019</i>)
+                        <ul>
+                            <li>
+                                Upgraded, tested and integrated an old suite of data analysis tools written in Python that are 
+                                currently in use by data scientists on a daily basis, taking user preferences and feature
+                                requests into account.
+                            </li>
+                            <li>
+                                Pioneered the creation of an internal package management system for Python packages.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Undergraduate Researcher</b> &mdash; University of Maryland (<i>Jan 2017 - Present</i>)
+                        <ul>
+                            <li>
+                                Received the competitive Maryland Summer Scholars grant, given to less than 30 undergraduates each
+                                year, to do research during the summer.
+                            </li>
+                            <li>
+                                Completed and presented a research poster on my vulnerability detection work at RSA Conference and
+                                at my university's Undergraduate Research Day.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Volunteer Scientific Programmer</b> &mdash; National Institute of Standards in Technology (<i>Jun 2018 - Aug 2018</i>)
+                        <ul>
+                            <li>
+                                Upgraded and tested an old scientific video analysis program. Added new supported video formats and updated
+                                code to modern guidelines of testability and maintainability. Thoroughly documented the resulting code to
+                                guarantee the future health of the program.
+                            </li>
+                            <li>
+                                Began work on what would eventually become the <a>NetZero project</a>.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Data Science Intern</b> &mdash; FedCentric Technologies (<i>Jan 2017 - Aug 2017</i>)
+                        <ul>
+                            <li>Rapidly learned data science and machine learning techniques over a course of a semester.</li>
+                            <li>Replicated and extended previous studies on vulnerability detection using Python libraries like Sci-Kit Learn.</li>
+                            <li>Developed additional datasets which yielded more consistent results than that of the previous studies.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>
