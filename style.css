@@ -1,56 +1,87 @@
 :root {
-    --main-bg-color: white;
-    --main-fg-color: white;
-    --main-text-color: black;
-    --main-text-color-inverted: white;
+    --bg: white;
+    --fg: black;
+    --bg-inverted: black;
+    --fg-inverted: white;
 
-    --nav-height: 3rem;
-    
-    --title-font: 'Patua One', serif;
-    --main-font: 'Roboto', sans-serif;
+    /* --nav-height: 3rem; */
+
+    --font: 'Open Sans', sans-serif;
+    --title-font: 'Roboto', serif;
 }
 
 body {
-    margin: 0;
-    background-color: var(--main-bg-color);
-    font-family: var(--main-font);
-    line-height: 1.5rem;
-}
+    background-color: var(--bg);
 
-img {
-    width: 100%;
+    font-family: var(--font);
 }
 
 nav {
     width: 100%;
-    z-index: 999;
-    display: table;
-
-    line-height: 2rem;
-    background-color: var(--main-fg-color);
-
-    /* Keep navbar at top */
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: absolute;
     top: 0;
-
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 }
 
+main {
+    max-width: 50rem;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+header aside span + span {
+    margin-left: 1rem;
+}
+
+#projects .project div {
+    display: flex;
+}
+
+#projects .project div * + * {
+    margin-left: 1em;
+}
+
+#projects .project div img {
+    width: 5em;
+    height: 5em;
+    object-fit: cover;
+}
+
+#projects .project div div {
+    display: inline;
+}
+
+#about .experience {
+    
+}
+
+h1, h2, h3 {
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-style: normal;
+    line-height: 75%;
+}
+
+h1 { font-size: 300% }
+h2 { font-size: 200% }
+h3 { font-size: 150% }
+
+hr { margin: 1em 0 1em 0 }
+
 a {
-    color: var(--main-text-color);
+    color: var(--fg);
 }
 
 a:hover {
-    color: var(--main-text-color-inverted);
-    background-color: var(--main-text-color);
+    color: var(--fg-inverted);
+    background-color: var(--bg-inverted);
 }
 
-nav a {
-    display: block;
-    float: left;
-    border: 2px solid;
+/*
 
+nav a {
     color: var(--main-text-color);
     background-color: var(--main-fg-color);
     border-color: var(--main-fg-color);
@@ -104,15 +135,6 @@ section{
 #links span + span {
     margin-left: 1rem;
 }
-
-/* #links a {
-    text-decoration: none;
-} */
-
-/* #links a:hover {
-    background-color: transparent;
-    text-decoration: underline;
-} */
 
 .preview {
     display: flex;
@@ -174,3 +196,4 @@ section{
     font-family: var(--title-font);
     font-size: 2rem;
 }
+*/
