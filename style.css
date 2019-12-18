@@ -49,19 +49,16 @@ header aside span + span {
     object-fit: cover;
 }
 
-#projects .project div div {
-    display: inline;
-}
-
-#about .experience {
-    
+#projects .project div p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h1, h2, h3 {
     font-family: var(--title-font);
     font-weight: 500;
-    font-style: normal;
-    line-height: 75%;
+    line-height: 1em;
+    margin: .5em 0 .5em 0;
 }
 
 h1 { font-size: 300% }
@@ -70,9 +67,7 @@ h3 { font-size: 150% }
 
 hr { margin: 1em 0 1em 0 }
 
-a {
-    color: var(--fg);
-}
+a { color: var(--fg) }
 
 a:hover {
     color: var(--fg-inverted);
