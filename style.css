@@ -31,6 +31,10 @@ header {
     text-align: center;
 }
 
+header aside span {
+    white-space: nowrap;
+}
+
 header aside span + span {
     margin-left: 1rem;
 }
@@ -57,7 +61,6 @@ header aside span + span {
 h1, h2, h3 {
     font-family: var(--title-font);
     font-weight: 500;
-    line-height: 1em;
     margin: .5em 0 .5em 0;
 }
 
