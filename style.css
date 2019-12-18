@@ -4,8 +4,6 @@
     --bg-inverted: black;
     --fg-inverted: white;
 
-    /* --nav-height: 3rem; */
-
     --font: 'Open Sans', sans-serif;
     --title-font: 'Roboto', serif;
 }
@@ -14,12 +12,6 @@ body {
     background-color: var(--bg);
 
     font-family: var(--font);
-}
-
-nav {
-    width: 100%;
-    position: absolute;
-    top: 0;
 }
 
 main {
