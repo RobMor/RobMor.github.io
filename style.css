@@ -4,8 +4,8 @@
     --bg-inverted: black;
     --fg-inverted: white;
 
-    --font: 'Open Sans', sans-serif;
-    --title-font: 'Roboto', serif;
+    --font: Arial, sans-serif;
+    --title-font: Arial, serif;
 }
 
 body {
@@ -51,7 +51,7 @@ header aside span + span {
 
 h1, h2, h3 {
     font-family: var(--title-font);
-    font-weight: 500;
+    font-weight: bold;
     margin: .5em 0 .5em 0;
 }
 
