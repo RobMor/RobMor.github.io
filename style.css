@@ -1,69 +1,120 @@
 :root {
-    --bg: white;
-    --fg: black;
-    --bg-inverted: black;
-    --fg-inverted: white;
+    --black: #282C34;
+    --red: #E06C75;
+    --green: #98C379;
+    --yellow: #E5C07B;
+    --blue: #61AFEF;
+    --violet: #C678DD;
+    --teal: #56B6C2;
+    --white: #ABB2BF;
 
-    --font: Arial, sans-serif;
-    --title-font: Arial, serif;
+    --bg: var(--black);
+    --fg: var(--white);
+
+    --font: monospace;
+    --size: 16px;
+}
+
+.fg-green {
+    color: var(--green);
+}
+
+.fg-red {
+    color: var(--red);
+}
+
+.fg-yellow {
+    color: var(--yellow);
+}
+
+.fg-violet {
+    color: var(--violet);
+}
+
+.fg-black {
+    color: var(--black);
+}
+
+.bg-white {
+    background-color: var(--white);
 }
 
 body {
     background-color: var(--bg);
+    color: var(--fg);
     font-family: var(--font);
+    font-size: var(--size);
 }
 
 main {
-    max-width: 50rem;
+    width: 120ch;
     margin: auto;
 }
 
-header {
-    text-align: center;
+aside {
+    display: flex;
+    justify-content: center;
 }
 
-header aside span {
-    white-space: nowrap;
+aside span + span {
+    margin-left: 1ch;
 }
 
-header aside span + span {
-    margin-left: 1rem;
+p {
+    margin: 0;
 }
 
-#projects .project div {
+h1, h2, h3{
+    font-size: var(--size);
+    margin: 0;
+}
+
+h1 {
+    white-space: pre;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+#projects h2 {
+    color: var(--red);
+}
+
+.project + .project {
+    margin-top: 1em;
+}
+
+.project {
     display: flex;
 }
 
-#projects .project div * + * {
-    margin-left: 1em;
+.project .description {
+    font-style: italic;
 }
 
-#projects .project div img {
-    width: 5em;
-    height: 5em;
-    object-fit: cover;
+.project pre {
+    margin: 0;
 }
 
-#projects .project div p {
-    margin-top: 0;
-    margin-bottom: 0;
+.project div {
+    margin-left: 1ch;
 }
 
-h1, h2, h3 {
-    font-family: var(--title-font);
-    font-weight: bold;
-    margin: .5em 0 .5em 0;
-}
-
-h1 { font-size: 300% }
-h2 { font-size: 200% }
-h3 { font-size: 150% }
-
-hr { margin: 1em 0 1em 0 }
-
-a { color: var(--fg) }
-
-a:hover {
-    color: var(--fg-inverted);
-    background-color: var(--bg-inverted);
+#about h2 {
+    color: var(--teal);
 }
