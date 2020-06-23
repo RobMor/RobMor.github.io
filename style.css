@@ -1,4 +1,22 @@
 :root {
+    --font: monospace;
+    --size: 16px;
+}
+
+body.light {
+    --black: black;
+    --red: red;
+    --green: green;
+    --blue: blue;
+    --violet: violet;
+    --teal: teal;
+    --while: white;
+
+    --bg: var(--white);
+    --fg: var(--black);
+}
+
+body.dark {
     --black: #282C34;
     --red: #E06C75;
     --green: #98C379;
@@ -8,35 +26,8 @@
     --teal: #56B6C2;
     --white: #ABB2BF;
 
-    --bg: var(--black);
-    --fg: var(--white);
-
-    --font: monospace;
-    --size: 16px;
-}
-
-.fg-green {
-    color: var(--green);
-}
-
-.fg-red {
-    color: var(--red);
-}
-
-.fg-yellow {
-    color: var(--yellow);
-}
-
-.fg-violet {
-    color: var(--violet);
-}
-
-.fg-black {
-    color: var(--black);
-}
-
-.bg-white {
-    background-color: var(--white);
+    --bg: #282C34;
+    --fg: #abb2bf; 
 }
 
 body {
@@ -47,38 +38,18 @@ body {
 }
 
 main {
-    width: 120ch;
+    width: 80ch;
     margin: auto;
 }
 
-aside {
-    display: flex;
-    justify-content: center;
-}
-
-aside span + span {
-    margin-left: 1ch;
+main > * + * {
+    margin-top: 1ch;
+    border-top: 1px dashed var(--fg);
+    padding-top: 1ch;
 }
 
 p {
     margin: 0;
-}
-
-h1, h2, h3{
-    font-size: var(--size);
-    margin: 0;
-}
-
-h1 {
-    white-space: pre;
-}
-
-h2 {
-    text-decoration: underline;
-}
-
-h3 {
-    font-weight: normal;
 }
 
 a {
@@ -91,30 +62,36 @@ a:hover {
     text-decoration: underline;
 }
 
-#projects h2 {
-    color: var(--red);
-}
-
-.project + .project {
-    margin-top: 1em;
-}
-
-.project {
+header {
     display: flex;
+    justify-content: space-between; 
 }
 
-.project .description {
-    font-style: italic;
-}
-
-.project pre {
+header ul {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
 }
 
-.project div {
+header ul li {
+    display: inline;
+}
+
+header ul li + li {
     margin-left: 1ch;
 }
 
-#about h2 {
-    color: var(--teal);
+#projects b {
+    display: block;
+    margin-bottom: 1ch;
 }
+
+#projects .project + .project {
+    margin-top: 1ch;
+}
+
+#projects .project .description {
+    display: inline;
+    font-style: italic;
+}
+
